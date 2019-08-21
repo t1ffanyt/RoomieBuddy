@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PickViewController">
+   <children>
+      <AnchorPane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="806.0" fitWidth="806.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../data/blue.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="130.0" layoutY="159.0" mnemonicParsing="false" onAction="#handle" prefHeight="123.0" prefWidth="540.0" text="Edit Profile" textFill="#008bff">
+               <font>
+                  <Font size="53.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="134.0" layoutY="400.0" mnemonicParsing="false" onAction="#results" prefHeight="123.0" prefWidth="540.0" text="Results" textFill="#008bff">
+               <font>
+                  <Font size="53.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="570.0" layoutY="30.0" mnemonicParsing="false" onAction="#logout" prefHeight="62.0" prefWidth="179.0" text="Logout" textFill="#008bff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

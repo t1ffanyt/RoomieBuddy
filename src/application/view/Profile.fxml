@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+ 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ProfileController">
+   <children>
+      <ImageView fitHeight="801.0" fitWidth="802.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/blue.jpg" />
+         </image></ImageView>
+      <Text fill="#dacece" layoutX="303.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile ">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="76.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classification:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="150.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="96.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cleanliness:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="45.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frequent Partier:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="54.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major hobbies:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="128.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="classification" layoutX="237.0" layoutY="134.0" />
+      <TextField fx:id="major" layoutX="237.0" layoutY="177.0" />
+      <RadioButton fx:id="notClean" layoutX="247.0" layoutY="228.0" mnemonicParsing="false" text="Not clean " textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="cleangrp" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="modClean" layoutX="414.0" layoutY="231.0" mnemonicParsing="false" text="Moderately clean" textFill="WHITE" toggleGroup="$cleangrp">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="veryClean" layoutX="645.0" layoutY="231.0" mnemonicParsing="false" text="Very clean" textFill="WHITE" toggleGroup="$cleangrp">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="yesParty" layoutX="247.0" layoutY="268.0" mnemonicParsing="false" text="Yes" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="partygrp" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="noParty" layoutX="415.0" layoutY="268.0" mnemonicParsing="false" text="No" textFill="WHITE" toggleGroup="$partygrp">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="music" layoutX="237.0" layoutY="318.0" mnemonicParsing="false" text="Music" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="film" layoutX="346.0" layoutY="318.0" mnemonicParsing="false" text="Film" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="gaming" layoutX="439.0" layoutY="318.0" mnemonicParsing="false" text="Gaming" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <Text fill="WHITE" layoutX="40.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Mark all that apply)">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="male" layoutX="228.0" layoutY="415.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="331.0" layoutY="415.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$gender">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="323.0" layoutY="664.0" mnemonicParsing="false" onAction="#handle" prefHeight="65.0" prefWidth="127.0" text="Submit">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="sports" layoutX="567.0" layoutY="318.0" mnemonicParsing="false" text="Sports" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="hiking" layoutX="234.0" layoutY="361.0" mnemonicParsing="false" text="Hiking/Exploring" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="reading" layoutX="450.0" layoutY="364.0" mnemonicParsing="false" text="Reading" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="bio" layoutX="204.0" layoutY="533.0" prefHeight="113.0" prefWidth="373.0" />
+      <Text fill="WHITE" layoutX="370.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="656.0" layoutY="24.0" mnemonicParsing="false" onAction="#logout" prefHeight="65.0" prefWidth="120.0" text="Logout">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="university" layoutX="589.0" layoutY="134.0" />
+      <TextField fx:id="apartment" layoutX="589.0" layoutY="177.0" />
+      <Text fill="WHITE" layoutX="453.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="448.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apartment:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="error" fill="#ff0101" layoutX="465.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.3603515625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="34.0" layoutY="48.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+   </children>
+</AnchorPane>
